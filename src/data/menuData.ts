@@ -1,0 +1,96 @@
+import { FoodItem } from '@/types';
+
+export const menuItems: FoodItem[] = [
+  {
+    id: '1',
+    name: 'Margherita Pizza',
+    price: 299,
+    category: 'Pizza',
+    image: 'https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=500&q=80',
+    isVeg: true,
+    description: 'Classic tomato sauce, mozzarella, and fresh basil',
+    stock: 50,
+    options: [
+      {
+        type: 'size',
+        label: 'Select Size',
+        choices: [
+          { name: '8 inch', price: 0 },
+          { name: '10 inch', price: 50 },
+          { name: '12 inch', price: 100 },
+        ],
+      },
+      {
+        type: 'toppings',
+        label: 'Add Toppings',
+        allowMultiple: true,
+        choices: [
+          { name: 'Extra Cheese', price: 30 },
+          { name: 'Olives', price: 20 },
+          { name: 'Mushrooms', price: 25 },
+        ],
+      },
+    ],
+  },
+  {
+    id: '2',
+    name: 'Chicken Tikka Pizza',
+    price: 399,
+    category: 'Pizza',
+    image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500&q=80',
+    isVeg: false,
+    description: 'Spicy chicken tikka with onions and capsicum',
+    stock: 45,
+    options: [
+      {
+        type: 'size',
+        label: 'Select Size',
+        choices: [
+          { name: '8 inch', price: 0 },
+          { name: '10 inch', price: 50 },
+          { name: '12 inch', price: 100 },
+        ],
+      },
+    ],
+  },
+  {
+    id: '3',
+    name: 'Cold Coffee',
+    price: 129,
+    category: 'Beverages',
+    image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=500&q=80',
+    isVeg: true,
+    description: 'Creamy cold coffee with ice cream',
+    stock: 100,
+  },
+  {
+    id: '4',
+    name: 'Chocolate Brownie',
+    price: 149,
+    category: 'Desserts',
+    image: 'https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=500&q=80',
+    isVeg: true,
+    description: 'Rich chocolate brownie with vanilla ice cream',
+    stock: 30,
+  },
+  {
+    id: '5',
+    name: 'French Fries',
+    price: 99,
+    category: 'Appetizers',
+    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80',
+    isVeg: true,
+    description: 'Crispy golden french fries',
+    stock: 60,
+  },
+  {
+    id: '6',
+    name: 'Paneer Butter Masala',
+    price: 249,
+    category: 'Main Course',
+    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&q=80',
+    isVeg: true,
+    description: 'Cottage cheese in rich tomato gravy',
+    stock: 40,
+  },
+];
